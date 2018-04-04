@@ -1,0 +1,23 @@
+1. A chave criptográfica é uma parte de informação que controla o funcionamento de um algoritmo de criptografia. Ela serve por exemplo para transformar um texto original em um cifrado ou decifra-lo caso ele já esteja criptografado.
+Há dois tipos: Simétricas e Assimétricas, a simétrica é o método de validação de acesso por um usuário através uma única chave para cifrar ou decifrar. Nas assimétricas utiliza-se duas chaves uma pública e uma privada.
+2 e 3. Simétricas: Ela usa a mesma chave para a criptografia e a deografia. Além dela ser mais rápida e costuma utiliza-la em grandes quantidades de dados. Devido a utilização de uma única chave há desvantagem pois todas as partes que enviam e recebem dados devem conhecer ou ter acesso à chave, sendo assim a organização deve ter certeza de que apenas as pessoas autorizadas podem acessar a chave.
+Assimétricas: Usa duas chaves distintas; é mais segura e costumas ser usadas em pequenas quantidades de dados pois ela é mais lenta. Existem chaves privadas e públicas, uma só pode ser deografada pela outra.
+4. KDC(Key Distribution Center), É um servidor centralizado que é responsável pela autenticação dos usuários. O KDC autentica o 
+usuário, também chamado principal, através de um ticket, que será utilizado para provar a identidade do usuário para serviços
+disponíveis na rede.
+Ao receber de uma máquina cliente uma requisição por um ticket, o KDC cria o chamado Ticket Granting Ticket (TGT), o criptografa 
+utilizando a senha secreta do usuário, criando a chamada chave secreta, e o envia para o cliente que fez a solicitação. O processo 
+de autenticação inicia-se com um pedido do cliente a este servidor central, o KDC, onde estão registradas as chaves secretas dos usuários. 
+Cada máquina cliente compartilha uma chave secreta com o KDC, o qual é o responsável por gerar chaves para serem usadas por um pequeno 
+período de tempo durante uma determinada conexão.
+5. GNU Privacy Guard (GnuPG or GPG) é uma alternativa GPL ao aplicativo PGP de criptografia. GnuPG é compatível com a RFC 4880, 
+o padrão da IETF para a especificação do OpenPGP. As versões atuais do PGP (e Filecrypt da Veridis) possuem interoperabilidade 
+com o GnuPG e com outros sistemas compatíveis com o OpenPGP. GnuPG é parte da Free Software Foundation e do projeto de software 
+GNU. Além disso, ele recebeu o patrocínio do Governo Alemão.
+O GPG é um sistema de encriptação composto de duas chaves, uma chave pública, que é distribuída abertamente e uma chave privada, 
+que é secreta. A chave publica pode ser utilizada para encriptar arquivos, que podem ser desencriptados apenas usando a chave privada. 
+Isto é feito através de um truque matemático: a chave publica é uma espécie de equação extremamente complexa, que embaralha o conteúdo 
+dos arquivos. A chave privada é um antídoto para ela, que permite reverter os dados a seu estado original. Porém, é impossível descobrir 
+o conteúdo da chave privada usando a chave pública e é também impossível fazê-lo via força bruta.
+6. ICP ou pki é o órgão publico ou privado que define a estrutura de chaves, baseado na estrutura da terceira parte confiável oferecendo mediação de credibilidade e confiança em transação entre partes com certificação publica.
+7. Erros de certificado podem ocorrer em qualquer navegador como Chrome, Firefox, Opera, Internet Explorer ou Microsoft Edge, já que todos negociam com sites da Internet por meio desses instrumentos. Como existem vários tipos de certificados e todos sofrem com erros diferentes, é difícil determinar uma regra geral para todos os browsers. Se esse erro acontecer o browser informara da periculosidade de se acessar o site. Muitas vezes, esse problema ocorre por causa de um ataque de vírus.
