@@ -1,0 +1,1 @@
+Fiz em uma vm kali e tentei fazer mas o apk não funciona e não sei a acausa do erro tentei algumas vezes mas não deu certo segue imagens do que fiz.  
