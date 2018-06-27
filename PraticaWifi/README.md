@@ -1,0 +1,1 @@
+Fiz tudo mas não apareceu nehum handshake então não deu pra tentar quebrar a senha.
